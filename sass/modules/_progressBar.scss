@@ -1,0 +1,83 @@
+
+
+.progessBarMain{
+    margin-bottom: 10rem;
+
+     /*mise en page des entetes des barres de progression*/
+    span{
+        display:block;
+        font-size: 1.1rem;
+        font-weight: 100;
+
+        &::first-letter{
+            text-transform: uppercase;
+        }
+    }
+
+    /*creation de la barre blanche */
+     
+    .barItem{
+        position: relative;
+           
+        &::after{
+            content:" " ;
+            position: absolute;
+            top:2.5rem;
+            left:0;
+            border-bottom: 6px solid $whiteColor;
+            border-radius: 1rem;
+            width:100%; 
+           
+        }
+    }
+      /*mise en page pour chacune des 3 barres de progression*/
+    .wireframingProgress {
+        @include progressBar(90%);
+    }
+    .uiUxProgress {
+        @include progressBar(70%);
+        span{
+            text-transform: uppercase;
+        }
+    }
+    .interactionProgress  {
+        @include progressBar(45%);
+    }
+      
+}
+@media screen  and (min-width: 720px){
+
+    .progessBarMain{
+        margin-bottom: 10rem;
+    
+        /*mise en page des entetes des barres de progression*/
+        span{
+            display:block;
+            font-size: 10px;
+        }
+          /*creation de la barre blanche */
+        .barItem{
+            &::after{
+               top:1.3rem;
+               border-bottom: 3px solid $whiteColor;  
+            }
+         }
+          /*mise en page pour chacune des 3 barres de progression*/
+        .wireframingProgress {
+            @include progressBarTablet(90%);
+        }
+        .uiUxProgress {
+            @include progressBarTablet(70%);
+            span{
+                text-transform: uppercase;
+            }
+        }
+        .interactionProgress{
+            @include progressBarTablet(45%);
+        }
+          
+    }
+}
+@media screen  and (min-width: 960px){
+  
+}

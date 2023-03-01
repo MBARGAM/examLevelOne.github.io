@@ -1,0 +1,44 @@
+.servicePageTitle{
+  @include blockMarging;
+  text-align: center;
+  color: $whiteColor;
+  font-weight: 100;
+  text-transform: capitalize;
+  margin-top: 6rem;
+ 
+}
+
+.serviceMainDivOfHeader{
+  display:flex;
+  justify-content: space-between;
+  @include blockMargingNav;
+  
+  .tchatLinkOfHeader{
+    display :none;
+  }
+  .logoOfHeader{
+    margin-top: 10px;
+  }
+  
+}     
+  
+@media screen  and (min-width: 720px){
+   
+  .serviceMainDivOfHeader{
+    @include blockMargingNavTablet;
+    img{
+      height: 20px;
+      width:40px;
+    }
+           
+    .tchatLinkOfHeader{
+      display :block;
+      margin-top: 1.2rem;
+      margin-left: 0;
+      }
+  }
+   
+}  
+@media screen  and (min-width: 960px){
+      
+}

@@ -1,0 +1,19 @@
+.moreWorkLink{
+    @include blockMarging;
+    text-align: center;
+    margin-left:0;
+    margin-right: 0;
+    margin-bottom: 8rem;
+    
+    .moreWork{ 
+        display: block;
+    } 
+}
+@media screen  and (min-width: 720px){
+    .moreWorkLink{
+        margin-bottom: 4rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+         
+    }
+}

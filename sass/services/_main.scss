@@ -1,0 +1,168 @@
+.servicePageMain{
+    .servicesMain{
+        background-color: $primaryBackground;
+        padding-top:7.5rem;
+        padding-bottom: 6rem;
+    }
+}
+.packagingDesignMain{
+    @include blockMarging;
+    h2{
+        font-size :2.5rem;
+        margin-bottom: 1.5rem;
+
+    }
+     
+     p{
+        color:rgba(255, 255, 255, 0.7);
+        margin-bottom: 1.5rem;
+     }
+     img{
+        display: block;
+        width: 100%;
+     }
+   
+    .boxedWater{
+        margin-bottom: 2rem;
+    }
+
+    span{
+        text-transform: capitalize;
+        font-weight: 100;
+    }
+    .moreWorkLink{
+        @include blockMarging;
+        margin: 2.5rem 0 3rem 0 ;
+        
+          .moreWork{ 
+             display: inline-block;
+              
+             
+            } 
+        } 
+    
+}
+.mockupDesign{
+    margin-top: 8rem;
+
+    .moreWorkLink{
+        margin-bottom: 5rem;
+    }
+    
+}
+.workItem{
+    margin-bottom: 7.5rem;
+}
+
+@media screen  and (min-width: 720px){
+
+    .packagingDesignMain{
+        @include blockMargingTablet;
+       
+        h2{
+            font-size: 2rem;
+        }
+        p{
+            line-height: 1.5rem;
+            margin-bottom: 0;
+        }
+        .moreWorkLink{
+            margin-top:  1.5rem;
+        }
+        .design{
+            display: flex;
+            justify-content: space-between;
+
+            .mockupDesign{
+                width:80%;
+                margin-right: 2rem;
+            }
+        }
+        .packaging{
+            display: flex;
+            .boxedWater{
+                width: 100%;
+                margin-right: 5rem;
+            }
+            .productPackaging{
+                margin-right: 3rem;
+            }
+            
+        }
+      
+        .workItem{
+            margin-bottom: 3rem;
+           
+        }
+         
+
+    }
+    .mockupDesign{
+        margin-top: 2rem; 
+
+        .moreWorkLink{
+            margin-top:  1.5rem;
+        }
+    }  
+    .servicePageMain{
+        .servicesMain{
+            background-color: $primaryBackground;
+            
+        }
+    }      
+}
+@media screen  and (min-width: 960px){
+   
+    .packagingDesignMain{
+        @include blockMargingPc;
+        
+            h2{
+                font-size: 1.5rem;
+            }
+            p{
+                line-height: 1rem;
+                margin-bottom: 0;
+            }
+            .moreWorkLink{
+                margin-top:  1rem;
+            }
+            .design{
+            
+                .mockupDesign{
+                    width:80%;
+                    margin-right: 1rem;
+                }
+            }
+            .packaging  {
+                display: flex;
+                .boxedWater{
+                    width: 120%;
+                    margin-right: 2rem;
+                }
+                .productPackaging{
+                    margin-right: 1rem;
+                }
+                
+            }
+    
+               
+            .workItem{
+                margin-bottom: 3rem;
+               
+            }
+
+        .mockupDesign{
+            margin-top: 2rem; 
+    
+            .moreWorkLink{
+                margin-top:  1.5rem;
+            }
+        }  
+    }
+    .servicePageMain{
+        .servicesMain{
+            background-color: $primaryBackground;
+        }
+    }
+   
+}

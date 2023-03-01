@@ -1,0 +1,57 @@
+.workDetailJobDescriptionMain{
+    @include blockMarging;
+}
+.workItemResume{
+    padding-top: 10rem;
+
+    h3{
+        color: $whiteColor;
+        font-weight: 100;
+        font-size: 1.5rem;
+       
+        &::first-letter{
+          text-transform: uppercase;
+            
+        }
+    }
+}
+    /*photo des telephones en back ground */
+
+    .workDetailMoreWorkLink{
+    
+        text-align: center;
+        margin-left:0;
+        margin-right: 0;
+        padding-top: 1.5rem;
+       padding-bottom: 4rem;
+     
+        .projectLink{ 
+            display: block;
+        } 
+    }
+      
+
+@media screen  and (min-width: 720px){
+   
+    .workDetailJobDescriptionMain{
+        @include blockMargingTablet;
+        width: 450px;
+        margin: 0 auto;
+        padding-top: 6rem;
+        
+        h3{
+            font-size: 1rem;
+        }
+    }   
+     
+}
+@media screen  and (min-width: 960px){
+ 
+    .workDetailJobDescriptionMain{
+        @include blockMargingPc;
+        width: 370px;
+        margin: 0 auto; 
+    }
+    
+
+}

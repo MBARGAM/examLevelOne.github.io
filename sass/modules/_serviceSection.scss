@@ -1,0 +1,69 @@
+.servicesMain{
+   
+    @include blockPadding ;
+   
+    h2 { 
+        margin-bottom: 3.5rem;
+    }
+
+    span{
+        display: inline-block;
+        
+        &::first-letter{
+            text-transform: uppercase;
+        }
+    }
+    .listOfServices{
+        text-align: center;
+    }
+    .serviceItem{
+        border:1px solid rgba(219, 154, 100, 0.4);
+        padding: 3.2rem;
+        margin-bottom: 2rem;
+    }
+    .ecommerceTitle{
+           
+        &::first-letter{
+            text-transform: lowercase;
+        }
+    }
+}
+@media screen  and (min-width: 720px){
+    .servicesMain{
+        @include blockPaddingTablet ;
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+    
+        h2 {  
+            margin-bottom: 1.5rem;
+        }
+        .listOfServices{
+           
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-column-gap:10px;
+        }
+        .serviceItem{   
+            padding: 1rem 10px;
+            margin-bottom: 0; 
+
+            h3{
+                margin-bottom: 5px;
+            }
+            img{
+                width: 18%;
+            }
+            p{ 
+                       
+                 font-size: 70%;
+            }            
+        }
+          
+    }
+}
+@media screen  and (min-width: 960px){
+    .servicesMain{
+        @include blockPaddingPc;
+        
+    }
+}

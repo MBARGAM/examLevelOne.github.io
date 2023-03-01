@@ -1,0 +1,33 @@
+
+.aboutPageHeader{
+  background: url("../images/banner.png") local no-repeat;  
+  background-size: 100% 32rem;
+  height: 32rem;
+}
+.aboutPageMain{
+   background-color: $primaryBackground;
+   color:$whiteColor;
+   
+}
+.aboutPageFooter{
+  background: url("../images/footer.png") local no-repeat;  
+  background-position: 50% 10%;
+  background-size:850%; 
+ color: $whiteColor;
+}
+
+@media screen  and (min-width: 720px){
+   
+  .aboutPageHeader{
+    height: 30rem;
+  }
+  .aboutPageFooter{
+    background: url("../images/footer.png") local no-repeat;  
+    background-size:100%; 
+  }
+}
+@media screen and (min-width:960px){
+  
+  
+}
+    

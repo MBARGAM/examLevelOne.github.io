@@ -1,0 +1,101 @@
+
+
+.workDetailMainDivOfHeader{
+ display:flex;
+ justify-content: space-between;
+ @include blockMargingNav;
+    
+ 
+ .tchatLinkOfHeader{
+    display :none;
+ }
+ .logoOfHeader{
+    margin-top: 10px;
+ }
+
+}
+.workDetailHeader{
+  .workDetailTitle{
+    @include blockMarging;
+   text-align: center;
+   color: $whiteColor;
+   font-weight: 100;
+   text-transform: capitalize;
+   margin-top: 4rem;
+   margin-bottom:6.5rem ;
+  }
+  .phonePic{ 
+    @include blockMarging;
+    img{
+      display: block;
+      width: 100%;
+      height: auto;
+      margin:0 auto;
+           
+    }
+  }
+
+}
+ 
+@media screen  and (min-width: 550px){
+  .workDetailHeader{
+    .phonePic{ 
+         
+      img{
+        width:500px;
+        height: 285px;
+      }
+    }
+   
+  }
+  
+}
+@media screen  and (min-width: 720px){
+  .workDetailMainDivOfHeader{
+    @include blockMargingNavTablet;
+    
+    img{
+      height: 20px;
+      width:40px;
+    }
+         
+    .tchatLinkOfHeader{
+      display :block;
+      margin-top: 1.2rem;
+      margin-left: 0;
+    }
+  }
+ 
+  .workDetailHeader{
+    .phonePic{ 
+      @include blockMargingTablet; 
+      img{
+        width: 598px;
+        height: 362px;
+      }
+      
+    }
+    .workDetailTitle{
+      margin-bottom: 2rem; 
+    }
+  }
+  
+     
+}  
+@media screen  and (min-width: 960px){
+   
+  .workDetailHeader{
+    .phonePic{ 
+      @include blockMargingPc; 
+      img{
+        width: 493px;
+        height: 320px;
+      }
+          
+    }
+        
+  }
+  
+  
+  
+}

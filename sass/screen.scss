@@ -1,0 +1,161 @@
+/* importation du fichier contenant la mise en page des variables*/
+@import "modules/variables";
+
+/* importation du fichier contenant la mise en page des  selecteurs basiques du site*/
+
+@import "selecteursBasiques";
+
+/* importation du style css pour footer*/
+
+@import "modules/footer";
+
+/* importation du fichier contenant la mise en page du menu de navigation*/
+
+@import "modules/nav";
+
+/* importation du style scss des commentaires clients*/
+
+@import "modules/commentsStyle";
+
+/* importation des donnees personnelles du client*/
+
+@import "modules/clientDataStyle";
+
+
+/* importation du style css pour les liens*/
+
+@import "modules/linkStyle";
+
+
+/* importation du fichier contenant la mise en page des barres de  progression*/
+
+@import "modules/progressBar";
+
+/* importation du fichier contenant la mise en page des sections service*/
+
+@import "modules/serviceSection";
+
+
+/* importation du fichier contenant la mise en page des sections works*/
+
+@import "modules/worksSection";
+
+/* importation du fichier contenant la mise en page des  selecteurs basiques de la page home ou index*/
+
+@import "index/base";
+
+/* importation du fichier contenant la mise en page du header de la page home ou index*/
+
+@import "index/header";
+
+/* importation du fichier contenant la mise en page du main de la page home ou index*/
+
+
+@import "index/main";
+
+
+/* importation du fichier contenant la mise en page des  selecteurs basiques de la page about*/
+
+@import "about/base";
+
+/* importation du fichier contenant la mise en page du header de la page about*/
+
+@import "about/header";
+
+/* importation du fichier contenant la mise en page du main  de la page about*/
+
+@import "about/main";
+
+/* importation du fichier contenant la mise en page des  selecteurs basiques de la page blog*/
+
+@import "blog/base";
+
+/* importation du fichier contenant la mise en page du header de la page blog*/
+
+@import "blog/header";
+
+/* importation du fichier contenant la mise en page du main de la page blog */
+
+
+@import "blog/main";
+
+/* importation du fichier contenant la mise en page des  selecteurs basiques de la page contact*/
+
+@import "contact/base";
+
+/* importation du fichier contenant la mise en page du header de la page contact*/
+
+@import "contact/header";
+
+/* importation du fichier contenant la mise en page du main de la page contact*/
+
+
+@import "contact/main";
+
+/* importation du fichier contenant la mise en page des  selecteurs basiques de la page service*/
+
+@import "services/base";
+
+/* importation du fichier contenant la mise en page du header de la page service*/
+
+@import "services/header";
+
+/* importation du fichier contenant la mise en page du main de la page service*/
+
+
+@import "services/main";
+
+
+/* importation du fichier contenant la mise en page des  selecteurs basiques de la page works*/
+
+@import "works/base";
+
+/* importation du fichier contenant la mise en page du header de la page works*/
+
+@import "works/header";
+
+/* importation du fichier contenant la mise en page du main de la page works*/
+
+
+@import "works/main";
+
+/* importation du fichier contenant la mise en page des  selecteurs basiques de la page blogDetail */
+
+@import "blogDetail/base";
+
+/* importation du fichier contenant la mise en page du header de la page blogDetail*/
+
+@import "blogDetail/header";
+
+/* importation du fichier contenant la mise en page du main de la page blogDetail*/
+
+
+@import "blogDetail/main";
+
+/* importation du fichier contenant la mise en page des  selecteurs basiques de la page blog*/
+
+@import "worksDetail/base";
+
+/* importation du fichier contenant la mise en page du header de la page blog*/
+
+@import "worksDetail/header";
+
+/* importation du fichier contenant la mise en page du main de la page blog*/
+
+
+@import "worksDetail/main";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

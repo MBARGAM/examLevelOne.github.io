@@ -1,0 +1,36 @@
+
+  .workDetailHeader{
+    background: url("../images/banner.png") local no-repeat;  
+    background-size:290% 27rem;
+    height: 27rem;
+  }
+  .workDetailMain{
+    background-color: $primaryBackground;
+    color:$whiteColor;
+     
+  }
+  .workDetailFooter{
+   background: url("../images/footer.png") local no-repeat;  
+   background-position: 50% 10%;
+   background-size:850%; 
+   color: $whiteColor;
+  }
+
+  @media screen  and (min-width: 720px){
+    .workDetailHeader{
+      height: 30rem;
+      background-size: 170% 100%;
+    }
+   .workDetailFooter{
+      background: url("../images/footer.png") local no-repeat;  
+      background-position: contain;
+      background-size:100%; 
+   }
+
+  }
+  @media screen and (min-width:960px){
+    .workDetailHeader{
+      background-size: 100% 100%;
+    }
+      
+  }

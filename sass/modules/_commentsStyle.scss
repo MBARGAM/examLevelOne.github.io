@@ -1,0 +1,108 @@
+.clientCommentsMain{
+    background-color: $secondaryBackground;
+    @include blockPadding ;
+    padding-top: 2rem;
+  
+    h2{
+        margin-bottom: 2rem;
+        span{
+            display:inline-block;
+            text-transform: lowercase;
+        }
+    }
+    p{
+        font-size: 1.4rem;
+        margin-bottom:2rem;
+
+        span{
+            display: inline-block;
+            text-transform: capitalize;
+            &::first-letter{
+                text-transform: uppercase;
+               
+            }
+        }
+        
+        span:nth-child(1){
+            position: relative;
+            padding-left: 8px;
+            
+            /*insertion des guillemets après le contenu de la span  et mise 
+            en page : creation d une balise enfant et 
+            mise en position absolu de des guillemets*/
+            &::after{
+              content:" “ ";
+               font-size: 1.5rem;
+               position: absolute;
+               top: 0;
+               left:0;
+               
+            }
+        }
+        .bracePunctuation{
+            display:none;
+        }
+     
+    }
+}
+@media screen  and (min-width: 720px){
+    .clientCommentsMain{
+        @include blockPaddingTablet ;
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+      
+        h2{
+            margin-bottom:1.5rem;
+        }
+        p{
+            font-size: 10px;
+            font-weight: normal;
+            margin-bottom:1rem;
+        }
+            
+        span:nth-child(1){
+            &::after{  
+                font-size: 8px;
+    
+            }
+        }
+    }
+    .blockComment{
+        @include AnimationComments(160%);    
+        width: 28rem;
+         
+        p{
+           line-height: 1rem;
+        }
+    
+    }
+}
+@media screen  and (min-width: 960px){
+    .clientCommentsMain{
+        @include blockPaddingPc ;
+        /*mise en place et style des accolades dans la partie commentaire de la page home*/
+        .bracePunctuation{
+            display:block;
+            align-self: center;
+               
+            &::before{
+                content:"<";
+                @include bracePunctuationStyle;
+                 
+            }
+            &::after{
+                content:">";
+                @include bracePunctuationStyle;
+            }
+        }
+    }
+    .commentsHeading{
+        display: flex;
+        justify-content:space-between;
+    }
+    .blockComment{
+        @include AnimationComments(160%);    
+        width: 28rem;
+         
+    }
+}

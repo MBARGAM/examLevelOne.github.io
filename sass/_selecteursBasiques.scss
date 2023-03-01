@@ -1,0 +1,57 @@
+html{
+    font-size: 15px;
+}
+body{
+     overflow-x: hidden;
+    margin: 0 auto;
+    font-family: $fontPolice;
+
+}
+h2{
+    @include h2Style;
+}
+h3{
+    @include h3Style;
+}
+  
+p{
+   font-size: 1.1rem;
+   font-weight:100;
+   line-height: 170%;
+     
+}
+.paragraphItem{
+    color:rgba(255, 255, 255, 0.7);
+ }
+
+.linkItem{
+    
+    @include linkStyle;
+    padding: 1.2rem 3.5rem;
+    font-size: 1.1rem;
+      
+}
+@media screen  and (min-width: 720px){
+    p{
+        font-size: 70%;
+        line-height:13px;
+    }
+    h2{
+        @include h2StyleTablet;
+    }
+    h3{
+        @include h3StyleTablet;
+    }
+    .linkItem{
+        padding: 8px 1.7rem;
+        font-size: 70%;
+             
+    }
+}
+@media screen and (min-width:1140px){
+    .wrap{
+        width:1140px;
+        margin: 0 auto;
+    } 
+}
+

@@ -1,0 +1,64 @@
+.aboutMainDivOfHeader{
+    display:flex;
+    justify-content: space-between;
+    @include blockMargingNav ;
+    margin-bottom: 3.5rem;
+    
+    .tchatLinkOfHeader{
+        display :none;
+    }
+    .logoOfHeader{
+        margin-top: 10px;
+    }
+}
+.aboutPersonalDataOfHeader{
+    @include blockMarging;
+    text-align: center;
+    p{
+        text-transform: capitalize;
+        color:$whiteColor;
+        font-size: 2rem;
+        font-weight: 100;
+        
+    }
+    span{
+        display:block;  
+
+    }
+     
+
+}
+
+@media screen  and (min-width: 720px){
+    
+    .aboutMainDivOfHeader{
+        @include blockMargingNavTablet;
+          margin-left: 5rem;
+          margin-right: 5rem;
+         
+        img{
+            height: 20px;
+            width:40px;
+        }
+       .tchatLinkOfHeader{
+          display :block;
+          margin-top: 1.2rem;
+          margin-left: 0;
+       }
+    
+    }
+    .aboutPersonalDataOfHeader{
+        position: relative;
+       p{
+         font-size: 2.3rem;
+         line-height:3rem;
+        }   
+    }   
+    
+    
+  }  
+  @media screen  and (min-width: 960px){
+     
+    
+  }
+  

@@ -1,0 +1,83 @@
+.aboutPersonalDescriptionOfMain{
+    @include blockMarging;
+    padding-top: 6rem;
+    margin-bottom: 2.2rem;
+  
+    p{
+        color: $whiteColor;
+        font-weight: 400;
+        margin-top: 0;
+        font-size: 1.6rem;
+        line-height: 160%; /* reglage de la hauteur entre les lignes */
+        &::first-letter{
+            text-transform: uppercase;
+        }
+
+    }
+    span{
+        text-transform: capitalize;
+    }
+}
+.aboutJobDescriptionMain{
+    @include blockMarging;
+
+    .textDescription{
+      margin-bottom: 2.5rem;
+
+      span{
+          text-transform: capitalize;   
+        }
+    }
+    .curriculum {
+        display: inline-block;
+        margin-top: 2rem;
+           
+        span{
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+
+@media screen  and (min-width: 720px){
+  
+    .aboutPersonalDescriptionOfMain{
+        @include blockMargingTablet;
+        padding-top: 3.5rem;
+        p{
+           
+            margin-right: 7rem;
+            font-size: 130%;
+            line-height: 130%; /* reglage de la hauteur entre les lignes */
+
+        }
+        
+    }
+    .aboutJobDescriptionMain{
+        @include blockMargingTablet;
+        height :15rem;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 3rem ;
+    
+        .textDescription{
+           margin-bottom: 2.5rem;
+
+         .curriculum {
+              margin-top: 1rem;
+           }
+        } 
+    }     
+}
+@media screen  and (min-width: 960px){
+    
+    .aboutPersonalDescriptionOfMain{
+        @include blockMargingPc;
+        
+    }
+    .aboutJobDescriptionMain{
+        @include blockMargingPc;
+
+    }    
+}

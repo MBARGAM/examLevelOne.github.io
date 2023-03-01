@@ -1,0 +1,79 @@
+
+.homeMainDivOfHeader{
+    display:flex;
+    justify-content: space-between;
+    @include blockMargingNav;
+    margin-bottom: 5rem;
+
+    .tchatLinkOfHeader{
+        display :none;
+    }
+    .logoOfHeader{
+        margin-top: 10px;
+    }
+}
+.homePersonalDataOfHeader{
+    @include blockMarging;
+    p{
+        text-transform: capitalize;
+        color:$whiteColor;
+        font-size: 2rem;
+        font-weight: 100;
+    }
+    span{
+        display:block;
+        color:$beigeColor;
+        margin-top: 2px;
+        margin-bottom: 3rem;
+
+    }
+    .jonyPic{
+        display: none;
+    }
+     
+
+}   
+
+
+
+@media screen  and (min-width: 720px){
+    .homeMainDivOfHeader{
+        @include blockMargingNavTablet;
+        img{
+            height: 20px;
+            width:40px;
+        }
+       .tchatLinkOfHeader{
+          display :block;
+          margin-top: 1.2rem;
+          margin-left: 0;
+        }  
+    }
+  .homePersonalDataOfHeader{
+        position: relative;
+        margin-left: 10%;
+        p{
+            font-size: 2.3rem;
+            line-height:3rem;
+        }
+     
+     /*image de jony en position absolu et premier plan par z-index*/
+      .jonyPic{ 
+           display: block;
+           position: absolute;
+           z-index:1;
+           width: 16.7rem;
+           left: 20rem;
+          top: -5rem;           
+        }
+     
+    }
+}        
+@media screen  and (min-width: 960px){
+  
+    .homePersonalDataOfHeader{
+        margin-left: 25%;
+    }
+    
+    
+}

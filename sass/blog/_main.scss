@@ -1,0 +1,578 @@
+.travelsAndBlogMain{
+
+    @include blockMarging;
+    padding-top: 8rem;
+
+ article{
+        background: $whiteColor;
+        margin-bottom: 3rem;
+        box-shadow: 1rem 1rem 1rem rgb(246, 249, 250);
+            
+        h4{
+            color: black;
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+                   
+            &::first-letter{
+                text-transform: uppercase;
+                  
+            }
+        }
+        a{
+            text-decoration: none;
+        }
+        p{
+            opacity: 0.8;
+        }
+        img{
+            @include imgBlogStyle;
+        }
+      span{
+            display: block;
+          
+            &::first-letter{
+                text-transform: uppercase;
+                 
+            }
+    
+            &:nth-child(1){ 
+                @include dateSpanChild1;
+               
+            }
+            &:nth-child(2){
+                @include dateSpanChild2;
+            }  
+        }
+        .dateItem{
+            position: relative;
+        }
+        .eventDate{
+            @include dateStylePhone;
+            @include dateStyleTablet;
+        }
+        .lifestyleAndComment{
+            display:flex;
+            padding-bottom: 1.5rem;
+            margin-left: 1rem;
+
+            a{
+                opacity: 0.5;
+                font-weight: 100;
+            }
+
+            span{ 
+                display: inline-block;
+                color: black;
+                opacity: 0.8;
+                font-size: 1rem;
+                text-transform: capitalize;
+                margin-right: 10px;
+
+                 &::nth-child(2){
+                    font-weight:100; 
+                     
+                }
+                   
+            }
+
+            .lifestyle{
+                      
+                &::after{
+                    content: "|";
+                    display: inline-block;
+                    margin-right : 10px;
+                }
+            }
+            .fas{
+                  opacity: 0.6;
+            }
+               
+        }
+
+        
+          
+    }
+     .swapPage{
+
+        text-align: center;
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+
+        .backPage{  
+            @include swapBlogPage("<");
+        }
+        .pageOne{  
+            @include swapBlogPage("1");
+        }
+        .pageTwo{  
+            @include swapBlogPage("2");
+           background-color: rgba(251,249,255,255);
+        }
+        .nextPage{  
+            @include swapBlogPage(">");
+        }
+        .pageItem{
+            display: inline-block;
+            margin: 0 2px;       
+        }
+        
+    }
+    .searchMain{
+        background-color:#fbf9ff ;
+        padding: 1rem 2rem 2rem 2rem;
+        margin-bottom: 2rem;
+
+        input{
+          
+            display: block;
+            background: $whiteColor;
+            color: $beigeColor;
+            border: 1px solid $beigeColor;
+            width:100%;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: 100;
+            letter-spacing: 3px;
+            margin:0 auto;
+        }
+        
+        span {
+           display: inline-block;
+           text-transform: capitalize;
+           opacity: 0.4;
+           padding-left: 1rem;
+           padding-right: 1rem;
+
+        }
+       
+        .keyword{
+            display: flex;
+            justify-content: space-between;
+            background: $whiteColor;
+            padding-top:1rem;
+            padding-bottom: 1rem;   
+            margin-bottom: 1rem;   
+           
+        }
+    }
+   .categoryMain{
+     background-color:#fbf9ff ;
+     margin-bottom: 2rem;
+
+       h3{
+            @include h3StyleBlogPagePhone;
+       }
+       a{
+           text-decoration: none;
+           color: black;
+           opacity: 0.9;
+       }
+       .categoryItem{
+            display: block;
+            font-weight: 100;
+            opacity: 0.6;
+            margin:  1rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            font-size: 1.1rem;
+             
+            &::after{
+                content: " ";
+                display: block;
+                border-bottom: 1px solid grey;
+                margin-top: 1.3rem;
+                opacity: 0.3;
+                
+            }
+             &::first-letter{
+                text-transform: uppercase;
+             }
+
+       } 
+       .healthCare{
+           text-transform: capitalize;
+           padding-bottom: 1.5rem;
+           
+           &::after{
+              border-bottom:none;
+           
+            
+            }
+        }
+        
+    }
+   .postMain{
+          background-color:#fbf9ff ;
+          margin-bottom: 2rem;
+          padding-bottom: 1rem;
+        
+         h3{
+              @include h3StyleBlogPagePhone;
+           }
+       
+         span{
+              display: block;
+                
+                &:nth-child(1){
+                    margin:0;
+                    font-size: 1.2rem; 
+                    margin-bottom:8px ;
+                   
+                }
+                &:nth-child(2){
+                    font-weight: 100;
+                }
+             
+            }
+         img{
+              display:block;
+              margin-right: 1.5rem;
+             
+            }
+         .postItem{
+              display: flex;
+              margin-left: 2rem;
+              padding-bottom: 1rem;
+
+             .postItemTexte{
+                 &::first-letter{
+                     text-transform: uppercase;
+                    }
+               }
+             .postItemText{
+                  text-transform: capitalize;
+
+                }
+             
+            }
+         .postText{
+             align-self: center;
+
+            }    
+       }
+      .tagCloudMainTablet{
+          display: none;
+       }
+      .tagCloudMain{
+          background-color:#fbf9ff ;
+          margin-bottom: 2rem;
+          padding-bottom: 1rem;
+        
+         h3{
+             @include h3StyleBlogPagePhone;
+           }
+         span{
+              display:inline-block;
+              background: $whiteColor;
+              padding:7px 1.5rem;
+              opacity: 0.8;
+              font-size: 1rem;
+              margin-right: 12px;
+              border: 1px solid rgba(7, 4, 4, 0.3);
+              font-weight: 100;
+              margin-bottom: 10px;
+            }
+         .tagItem{
+           
+             margin-bottom: 10px;
+             margin-left:2rem;
+            }
+       
+        }
+      .instagramMain{
+          background-color:#fbf9ff ;
+          margin-bottom: 2rem;
+          padding-bottom: 2rem;
+        
+         h3{
+             @include h3StyleBlogPagePhone;
+           }
+         img{
+             width: 100%;
+             margin-bottom: 10px;
+            
+           }
+         .instagramItem{
+             margin-left:2rem;
+             margin-right: 2rem;
+             display: grid;
+             grid-template-columns: repeat(3,1fr);
+             grid-column-gap: 10px;
+           
+            }
+
+        }
+      .newsletterMain{
+          background-color:#fbf9ff ;
+          margin-bottom: 10rem;
+          padding: 1rem 2rem 2rem 2rem;
+         
+          h3{
+             @include h3StyleBlogPagePhone;
+             margin-left: 0;
+             padding-left: 0;
+           }
+          input{
+             display: block;
+             background: $whiteColor;
+             color: $beigeColor;
+             border: 1px solid $beigeColor;
+             width:100%;
+             padding-top: 1rem;
+             padding-bottom: 1rem;
+             font-size: 1rem;
+             font-weight: 100;
+             letter-spacing: 3px;
+             margin:0 auto;
+            }
+       
+          .email{
+             box-sizing:border-box;
+             margin-bottom: 1rem; 
+             border: 1px solid rgba(128, 128, 128,0.3);
+              &::placeholder{
+                  padding-left: 1rem;
+               }
+           }
+          .submit{
+            text-transform: uppercase;
+
+        }
+    }
+    
+ }
+@media screen  and (min-width: 720px){
+    .travelsAndBlogMain{
+      @include blockMargingTablet;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-column-gap: 1rem;
+        padding-top: 4rem;
+
+        article{
+            margin-bottom: 2rem;
+            box-shadow: 4px 8px 4px rgb(246, 249, 250);
+                
+            h4{
+                
+                font-size: 1rem;
+                margin-bottom: 8px;
+            }
+
+            span{
+                &:nth-child(1){ 
+                    font-size: 1rem;
+                   
+                }
+                &:nth-child(2){
+                    font-size: 1rem;
+                }   
+            }
+             
+            .lifestyleAndComment{
+                padding-bottom: 1rem;
+                span{                 
+                    font-size:10px;
+                     margin-right: 8px;
+                }          
+            }
+              
+        }
+        .swapPage{
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+    
+            .backPage{  
+                width: 10px;
+                padding: 10px 14px 10px 10px;
+            }
+            .pageOne{  
+                width: 10px;
+                padding: 10px 14px 10px 10px;
+            }
+            .pageTwo{  
+                width: 10px;
+                padding: 10px 14px 10px 10px;
+            }
+            .nextPage{  
+                width: 10px;
+                padding: 10px 14px 10px 10px;
+               
+            }   
+        }
+        .searchMain{
+         
+            padding: 1rem 1rem 1rem 1rem;
+            margin-bottom: 1rem;
+    
+            input{
+                padding-top: 10px;
+                padding-bottom: 10px;
+                font-size: 10px;
+                letter-spacing: 3px;
+            
+            }
+            
+            span {
+               padding-left: 10px;
+               padding-right: 10px;
+               font-size: 10px;
+    
+            }
+           
+            .keyword{
+                padding-top:10px;
+                padding-bottom: 10px;   
+                margin-bottom: 10px;   
+               
+            }
+       }
+       .categoryMain{
+            margin-bottom: 1rem;
+
+           h3{
+             @include h3StyleBlogPageTablet;
+           
+           }
+           .categoryItem{
+               
+                margin: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-size: 13px;
+                
+            } 
+           .healthCare{
+               padding-bottom: 2px;
+            }
+            
+       }
+       .postMain{
+          margin-bottom: 1rem;
+          padding-bottom: 10px;
+            
+            h3{
+                @include h3StyleBlogPageTablet;
+            }
+           
+            span{
+                font-size: 9px;
+                &:nth-child(1){
+                    font-size: 9px;
+                     margin-bottom:8px ;
+                       
+                }
+                 
+            }
+            img{
+                margin-right:10px; 
+             
+            }
+            .postItem{
+                
+              margin-left: 1rem;
+              padding-bottom: 10px;
+            }   
+        }
+        .tagCloudMainTablet{
+            display: block;
+            background-color:#fbf9ff ;
+            margin-bottom: 1rem;
+            padding-bottom: 10px;
+              
+            h3{
+                @include h3StyleBlogPagePhone;
+                @include h3StyleBlogPageTablet;
+            }
+        
+            .tagItem{
+               display: flex;
+               flex-wrap: wrap;
+               background-color:#fbf9ff ;
+               margin-bottom: 10px;
+               padding-bottom: 10px;
+               margin-left:1rem;
+          
+              span{
+                 display:inline-block;
+                 background: $whiteColor;
+                 opacity: 0.8;
+                 border: 1px solid rgba(128, 128, 128,0.3);
+                 font-weight: 100;
+                 padding:5px 1rem;
+                 font-size: 10px;
+                 margin-right: 6px;
+                 margin-bottom: 6px;
+               }
+            }
+            
+            
+        }
+
+        .tagCloudMain{
+            display: none;
+ 
+        }
+        .instagramMain{
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            
+            h3{
+                @include h3StyleBlogPageTablet;
+            }
+            img{
+                margin-bottom: 10px;
+            }
+            .instagramItem{
+                margin-left:1rem;
+                margin-right: 1rem;    
+               
+            }
+    
+        }
+        .newsletterMain{
+            background-color:#fbf9ff ;
+            margin-bottom: 10rem;
+            padding: 1rem 2rem 2rem 2rem;
+            h3{
+                @include h3StyleBlogPageTablet;
+            }
+    
+            input{
+                padding-top: 10px;
+                padding-bottom: 10px;
+                font-size: 10px;
+                letter-spacing: 2px;
+              
+            }
+           
+            .email{
+                box-sizing:border-box;
+                margin-bottom: 1rem; 
+                border: 1px solid rgba(128, 128, 128,0.3);
+                &::placeholder{
+                    padding-left: 1rem;
+                }
+            }
+            .submit{
+                text-transform: uppercase;
+    
+            }
+        }
+        
+    }  
+    .travelsMain{
+        grid-column: 1/span 2;
+    }
+
+}
+@media screen  and (min-width: 960px){
+    .travelsAndBlogMain{
+      margin-left: 10rem;
+      margin-right :10rem;
+    }
+       
+}

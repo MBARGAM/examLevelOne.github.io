@@ -1,0 +1,37 @@
+
+.contactPageHeader{
+  background: url("../images/banner.png") local no-repeat;  
+  background-size:290% 100%;
+  height: 22.2rem;
+}
+.contactPageMain{
+  background-color: $whiteColor;
+}
+.contactPageFooter{
+ background: url("../images/footer.png") local no-repeat;  
+ background-position: 50% 10%;
+background-size:850%; 
+color: $whiteColor;
+}
+
+
+@media screen  and (min-width: 720px){
+
+  .contactPageHeader{
+    height: 22.2rem;
+    background-size: 170% 100%;
+  }
+ .contactPageFooter{
+    background: url("../images/footer.png") local no-repeat;  
+    background-size:100%; 
+ }
+ 
+
+}
+@media screen and (min-width:960px){
+  .contactPageHeader{
+   
+    background-size: 100% 100%;
+  }
+ 
+}

@@ -1,0 +1,62 @@
+
+.workMainDivOfHeader{
+    display:flex;
+    justify-content: space-between;
+    @include blockMargingNav;
+    margin-bottom: 5rem;
+
+    .tchatLinkOfHeader{
+        display :none;
+    }
+    .logoOfHeader{
+        margin-top: 10px;
+    }
+}
+.workPersonalDataOfHeader{
+    @include blockMarging;
+    text-align: center;
+    h2{
+        color: $whiteColor;
+        padding-top: 1rem;
+        margin-left: 2rem;
+    } 
+
+}
+
+
+@media screen  and (min-width: 720px){
+  
+    .workMainDivOfHeader{
+        @include blockMargingNavTablet;
+        img{
+            height: 20px;
+            width:40px;
+        }
+       .tchatLinkOfHeader{
+        display :block;
+        margin-top: 1.2rem;
+        margin-left: 0;
+       }
+    
+    }
+  .workPersonalDataOfHeader{
+  
+      h2{
+         font-size: 3rem;
+         margin-left: 0;
+         font-weight: 100;
+        
+        } 
+     
+    }    
+    
+    
+}  
+@media screen  and (min-width: 960px){
+  
+    .workPersonalDataOfHeader{
+         margin-left: 0;
+    }
+    
+    
+}

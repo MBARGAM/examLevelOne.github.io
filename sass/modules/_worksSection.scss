@@ -1,0 +1,103 @@
+.worksMain{
+    @include blockMarging;
+    padding-top: 6.5rem;
+
+    .workItem{
+        margin-bottom: 6.2rem;
+    }
+
+    h2{
+        margin-bottom: 3rem;
+    }
+    img{
+        width: 100%;
+        margin-bottom: 1.6rem;
+    }
+    
+    a{
+        text-decoration: none;
+        color: $whiteColor;
+    }
+    span{
+        display: block;
+        text-transform: capitalize;
+        font-weight: 100;
+    }
+    .mobileApp{
+        font-size:1.1rem; 
+        margin-bottom: 10px;
+        
+    }
+    .appProject{
+        color: $beigeColor;
+        font-size: 1.6rem;
+    }
+}
+@media screen  and (min-width: 720px){
+    .worksMain{
+        @include blockMargingTablet;
+        padding-top: 2.5rem;
+       
+        h2{
+            margin-bottom: 1.8rem;
+        }
+        img{  
+            margin-bottom: 10px;
+        }
+    
+        .workItem{
+            margin-bottom: 3rem;
+          
+        }
+        .listOfworks{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-column-gap:14px;
+            margin-left: 3rem;
+            margin-right: 3rem;
+                     
+              /* style pour intervertir les position de 2 elements enfant*/
+            .workItem:nth-child(1){
+               grid-column-start: 1;
+                grid-row-start: 1;
+                grid-row-end: span 2;
+                
+            }
+            /*positionnement du 2 eme block dans la grille*/
+            .workItem:nth-child(2){
+                grid-column-start: 1;
+                grid-row-start: 3;
+                
+            }
+            /*positionnement du 3eme block dans la grille*/
+            .workItem:nth-child(3){
+                grid-column-start: 2;
+                grid-row-start: 1;
+                
+            }
+            /*positionnement du 4 eme block dans la grille*/
+            .workItem:nth-child(4){
+                grid-column-start: 2;
+                grid-row-start: 2;
+                grid-row-end: span 2;
+              
+            }
+            
+        }
+        .mobileApp{
+            font-size:80%; 
+            margin-bottom: 5px;
+            
+        }
+        .appProject{
+            font-size: 100%;
+        } 
+    }
+    
+}
+@media screen  and (min-width: 960px){
+    .worksMain{
+        @include blockMargingPc;
+        
+    }
+}

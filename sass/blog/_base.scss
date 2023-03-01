@@ -1,0 +1,37 @@
+
+.blogPageHeader{
+  background: url("../images/banner.png") local no-repeat;  
+  background-size:290% 100%;
+  height: 22.2rem;
+}
+.blogPageHeaderMain{
+  background-color: $whiteColor;
+ 
+}
+.blogPageFooter{
+  background: url("../images/footer.png") local no-repeat;  
+  background-position: 50% 10%;
+  background-size:850%; 
+  color: $whiteColor;
+}
+
+@media screen  and (min-width: 720px){
+
+  .blogPageHeader{
+    height: 22.2rem;
+    background-size: 170% 100%;
+  }
+ .blogPageFooter{
+    background: url("../images/footer.png") local no-repeat;  
+  
+    background-size:100%; 
+  }
+
+}
+@media screen and (min-width:960px){
+  .blogPageHeader{
+   
+    background-size: 100% 100%;
+ }
+
+}

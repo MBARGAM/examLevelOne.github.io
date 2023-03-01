@@ -1,0 +1,99 @@
+
+.homePersonalDescriptionOfMain{
+    @include blockMarging;
+    padding-top: 6rem;
+    margin-bottom: 2.2rem;
+    p{
+        color: $whiteColor;
+        font-weight: 400;
+        margin-top: 0;
+        font-size: 1.6rem;
+        line-height: 160%; /* reglage de la hauteur entre les lignes */
+        &::first-letter{
+            text-transform: uppercase;
+        }
+
+    }
+    span{
+        text-transform: capitalize;
+     }
+}
+.homeJobDescriptionMain{
+    @include blockMarging;
+
+    .textDescription{
+       margin-bottom: 2.5rem;
+        span{
+            text-transform: capitalize;   
+        }
+        .curriculum {
+           display: inline-block;
+            margin-top: 2rem;
+           
+           span{
+              text-transform: uppercase;
+            }
+        }
+    }
+}
+.homePageMain{
+    .servicesMain{
+        background-color: $secondaryBackground;
+        padding-top: 6.5rem;
+        padding-bottom: 6.5rem;
+    }
+}
+
+
+@media screen  and (min-width: 720px){
+
+    .homePersonalDescriptionOfMain{
+        @include blockMargingTablet;
+        padding-top: 3.5rem;
+        p{
+            margin-right: 7rem;
+            font-size: 130%;
+            line-height: 130%; /* reglage de la hauteur entre les lignes */
+
+        }
+        
+    }
+    .homeJobDescriptionMain{
+        @include blockMargingTablet;
+        height :15rem;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 3rem ;
+  
+        .textDescription{
+            margin-bottom: 2.5rem;
+            .curriculum {
+                margin-top: 1rem;
+            }
+        }
+    }
+    .homePageMain{
+        .servicesMain{
+            background-color: $secondaryBackground;
+            padding-top: 3rem;
+            padding-bottom: 4rem;
+        }
+    }
+            
+}
+@media screen  and (min-width: 960px){
+    .homePersonalDescriptionOfMain{
+        @include blockMargingPc;
+        
+    }
+    .homeJobDescriptionMain{
+        @include blockMargingPc;
+
+    }
+    .homePageMain{
+        .servicesMain{
+            background-color: $secondaryBackground;
+        }
+    }
+
+}

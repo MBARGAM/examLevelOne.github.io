@@ -1,0 +1,30 @@
+.workPageMain{
+    .worksMain{
+        padding-top: 7rem;
+    }
+}
+.clientCommentsMain{
+       
+    .blockComment{
+        @include AnimationComments(160%);    
+        width: 75%;
+          
+    }
+}
+
+@media screen  and (min-width: 720px){
+    .workPageMain{
+        .blockComment{  
+            width: 28rem;        
+            p{
+                line-height: 1rem;
+            }
+        
+        }
+            
+    }
+   
+}
+@media screen  and (min-width: 960px){
+
+}

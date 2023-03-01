@@ -1,0 +1,46 @@
+.blogDetailPageHeader{
+  background: url("../images/banner.png") local no-repeat;  
+  background-size:290% 100%;
+  height: 22.2rem;
+  p{
+    opacity: 0.8;
+   }
+   
+}
+.blogDetailPageMain{
+  background-color: $whiteColor;
+  p{
+    opacity: 0.8;
+  }
+   
+ 
+}
+.blogDetailPageFooter{
+ background: url("../images/footer.png") local no-repeat;  
+ background-position: 50% 10%;
+ background-size:850%; 
+ color: $whiteColor;
+  p{
+    opacity: 0.8;
+  }
+ 
+}
+
+@media screen  and (min-width: 720px){
+
+  .blogDetailPageHeader{
+    height: 22.2rem;
+    background-size: 170% 100%;
+ }
+ .blogDetailPageFooter{
+  background: url("../images/footer.png") local no-repeat;  
+  
+    background-size:100%; 
+  }
+}
+@media screen and (min-width:960px){
+  .blogDetailPageHeader{
+   
+    background-size: 100% 100%;
+ }   
+}
